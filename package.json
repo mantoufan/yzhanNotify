@@ -2,15 +2,16 @@
   "name": "yzhannotify",
   "version": "0.0.1",
   "type": "module",
+  "description": "Only 0.78kB 用原生 JavaScript 在视窗或元素指定位置发通知和提示。Element and Global Notifications / Toasts with Pure / Vanilla / Native JavaScript.",
   "files": [
-    "dist"
+    "docs"
   ],
-  "main": "./dist/yzhannotify.umd.cjs",
-  "module": "./dist/yzhannotify.js",
+  "main": "./docs/yzhannotify.umd.cjs",
+  "module": "./docs/yzhannotify.js",
   "exports": {
     ".": {
-      "import": "./dist/yzhannotify.js",
-      "require": "./dist/yzhannotify.umd.cjs"
+      "import": "./docs/yzhannotify.js",
+      "require": "./docs/yzhannotify.umd.cjs"
     }
   },
   "scripts": {
@@ -20,5 +21,26 @@
   },
   "devDependencies": {
     "vite": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:mantoufan/yzhanNotify.git"
+  },
+  "keywords": [
+    "Notify",
+    "Notifications",
+    "Toasts",
+    "通知",
+    "提示",
+    "Pure",
+    "Native",
+    "Vanilla",
+    "原生"
+  ],
+  "author": "吴小宇 Shon Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mantoufan/yzhanNotify/issues"
+  },
+  "homepage": "https://github.com/mantoufan/yzhanNotify#readme",
 }

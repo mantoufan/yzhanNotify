@@ -6,12 +6,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo</title>
+  <link href="./yzhannotify.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fafafa;
+    }
+
+    #main {
+      position: absolute;
+      margin: auto;
+      width: 300px;
+      height: fit-content;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+    }
+
+    #main>textarea,
+    #main>input[type=text] {
+      width: 97%
+    }
+
+    #main>* {
+      width: 100%;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="main">
+    <textarea id="msg" placeholder="msg:"></textarea>
+    <input id="duration" type="text" placeholder="duration: (>=300ms)"></input>
+    <select id="ele" placeholder="eles">
+      <option value="ele">ele: document.getElementById('main')</option>
+      <option>global</option>
+    </select>
+    <select id="position" placeholder="position">
+      <option value="">position: (top center)</option>
+      <option>top left</option>
+      <option>top center</option>
+      <option>top right</option>
+      <option>bottom left</option>
+      <option>bottom center</option>
+      <option>bottom right</option>
+      <option>left top</option>
+      <option>left center</option>
+      <option>left bottom</option>
+      <option>right top</option>
+      <option>right center</option>
+      <option>right bottom</option>
+    </select>
+    <input id="className" type="text" placeholder="className:"></input>
+    <input id="bt" type="button" value="Noitfy"></button>
+  </div>
   <script src="yzhannotify.umd.cjs"></script>
   <script>
-    console.log(YZhanNotify)
+    bt.onclick = function () {
+      YZhanNotify({
+        msg: msg.value || 'hello world',
+        position: position.value,
+        duration: duration.value,
+        ele: ele.value === 'ele' ? document.getElementById('main') : null,
+        className: className.value
+      })
+    }
   </script>
 </body>
 
