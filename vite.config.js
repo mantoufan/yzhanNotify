@@ -8,7 +8,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       lib: {
         entry: resolve(__dirname, 'src/index.js'),
         name: 'YZhanNotify',
-        fileName: 'yzhannotify'
+        fileName: 'yzhannotify',
       },
       rollupOptions: {
         output: {
