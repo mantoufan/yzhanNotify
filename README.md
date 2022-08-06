@@ -20,7 +20,7 @@ import YZhanNotify from 'yzhannotify'
 ```
 ### Browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/yzhannotify/docs/yzhannotify.min.js"></scirpt>
+<script src="https://cdn.jsdelivr.net/npm/yzhannotify/docs/yzhannotify.umd.cjs"></scirpt>
 ```
 
 ## API

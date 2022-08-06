@@ -1,6 +1,6 @@
 {
   "name": "yzhannotify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Only 0.78kB 用原生 JavaScript 在视窗或元素指定位置发通知和提示。Element and Global Notifications / Toasts with Pure / Vanilla / Native JavaScript.",
   "files": [
