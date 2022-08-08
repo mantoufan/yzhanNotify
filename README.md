@@ -16,11 +16,13 @@ Element and Global Notifications / Toasts with Pure / Vanilla / Native JavaScrip
 ### Node.js
 ```javascript
 npm i yzhannotify
+import 'yzhannotify/css'
 import YZhanNotify from 'yzhannotify'
 ```
 ### Browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/yzhannotify/docs/yzhannotify.umd.cjs"></scirpt>
+<link href="https://cdn.jsdelivr.net/npm/yzhannotify@latest/docs/yzhannotify.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/yzhannotify@latest/docs/yzhannotify.umd.cjs"></scirpt>
 ```
 
 ## API

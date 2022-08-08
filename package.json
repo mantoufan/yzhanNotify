@@ -12,6 +12,10 @@
     ".": {
       "import": "./docs/yzhannotify.js",
       "require": "./docs/yzhannotify.umd.cjs"
+    },
+    "./css": {
+      "import": "./docs/yzhannotify.css",
+      "require": "./docs/yzhannotify.css"
     }
   },
   "scripts": {
